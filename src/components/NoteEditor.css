@@ -1,0 +1,36 @@
+.note-editor {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-editor-content-view {
+  flex: 1;
+  color: #333;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-y: auto;
+  max-height: calc(100vh - 300px);
+}
+
+.note-editor-content-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  resize: none;
+  font-family: inherit;
+}
+
+.note-editor-content-input::placeholder {
+  color: #999;
+}
+
+.note-editor-content-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
